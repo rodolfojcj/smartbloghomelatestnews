@@ -12,7 +12,7 @@
                         <span class="news_module_image_holder">
                              <a href="{smartblog::GetSmartBlogLink('smartblog_post',$options)}"><img alt="{$post.title}" class="feat_img_small" src="{$modules_dir}smartblog/images/{$post.post_img}-home-default.jpg"></a>
                         </span>
-                        <span>{$post.date_added}</span>
+                        <span>{$post.date_added|date_format}</span>
                         <h4 class="sds_post_title"><a href="{smartblog::GetSmartBlogLink('smartblog_post',$options)}">{$post.title}</a></h4>
                         <p>
                             {$post.short_description|escape:'htmlall':'UTF-8'}
